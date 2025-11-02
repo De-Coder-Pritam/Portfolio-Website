@@ -890,7 +890,7 @@ body{
     align-items: start;
     gap: 4rem;
     padding: 80px 40px;
-    margin-top: 50px;
+    margin-top: 1px;
 }
 
 .contact-text h2 {
