@@ -1,0 +1,8 @@
+- [ ] Add theme toggle button to navbar in index.html
+- [ ] Add hamburger menu structure to navbar in index.html
+- [ ] Refactor stylesheet.css: Add CSS variables for themes, update color references
+- [ ] Add responsive styles for mobile in stylesheet.css
+- [ ] Add hamburger menu styles in stylesheet.css
+- [ ] Hide hero background image on mobile in stylesheet.css
+- [ ] Add theme toggle logic in main.js
+- [ ] Add hamburger toggle logic in main.js

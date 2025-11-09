@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css"/>
+    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
- 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Pritam.<span>Dev</span></a>
         <nav class="navbar">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
             <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Projects</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#Skills" style="--i:3">Skills</a>
+            <a href="#project" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's Me</h3>
+            <h3>Hello, I am</h3>
             <h1>Pritam Kumar Branwal</h1>
             <h3>And  I'm a <span id="text"></span></h3>
-            <div class="home-sci">
-                <a href="https://www.linkedin.com/in/pritam-kumar-branwal-995898233" style="--i:7"><img src="lnk.png"alt="linkedin" height="22px" width="22px"></a>
-                <a href="https://www.instagram.com/pritam_kr._branwal?igsh=ejNwaDc2MWk1dWs3" style="--i:8"><img src="instagram.png"alt="instagram" height="22px" width="22px"></a>
-                <a href="https://www.facebook.com/pritamkr.barnwal.1" style="--i:9"><img src="fb.png"alt="facebook" height="22px" width="22px"></a>
-                <a href="https://github.com/De-Coder-Pritam" style="--i:10"><img src="gb.png"alt="github" height="22px" width="22px"></a>
-
-            </div>
             <a href="Pritam-Resume-W.pdf" class="btn-box" download="Pritam_Kumar_Resume.pdf">Download my CV</a>
 
         </div>
@@ -126,112 +128,119 @@
 
         </div>
     </section>
-    <h1 class="sub-title">My <span>Skills</span></h1>
-    <section>
-        <div class="skills-row">
-            <div class="container1" id="Skills">
-                <h1 class="heading1">Technical Skills</h1>
-                <br/>
-                <br/>
-                <div class="Technical-bars">
-                    <div class="bar">
-                        <div class="info"><span>SpringBoot</span></div>
-                        <div class="progress-wrapper">
-                            <div class="progress-line html" data-progress="80"><span class="fill"></span></div>
-                            <span class="percent-label"></span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="bar">
-                        <div class="info"><span>MySQL</span></div>
-                        <div class="progress-wrapper">
-                            <div class="progress-line css" data-progress="74"><span class="fill"></span></div>
-                            <span class="percent-label"></span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="bar">
-                        <div class="info"><span>Javascript</span></div>
-                        <div class="progress-wrapper">
-                            <div class="progress-line javascript" data-progress="78"><span class="fill"></span></div>
-                            <span class="percent-label"></span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="bar">
-                        <div class="info"><span>Java</span></div>
-                        <div class="progress-wrapper">
-                            <div class="progress-line javascript" data-progress="78"><span class="fill"></span></div>
-                            <span class="percent-label"></span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="bar">
-                        <div class="info"><span>Python</span></div>
-                        <div class="progress-wrapper">
-                            <div class="progress-line node" data-progress="90"><span class="fill"></span></div>
-                            <span class="percent-label"></span>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="bar">
-                        <div class="info"><span>Devops</span></div>
-                        <div class="progress-wrapper">
-                            <div class="progress-line sql" data-progress="85"><span class="fill"></span></div>
-                            <span class="percent-label"></span>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-            </div>
+<h1 class="sub-title" id="Skills">My <span>Skills</span></h1>
+<section>
+  <div class="skills-row">
 
-            <div class="container1 professional">
-                <h1 class="heading1">Professional Skills</h1>
-                <br/>
-                <div class="radial-bars">
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">90%</div>
-                        <div class="text">Creativity</div>
-                    </div>
-
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">80%</div>
-                        <div class="text">Teamwork</div>
-                    </div>
-
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">85%</div>
-                        <div class="text">Problem Solving</div>
-                    </div>
-
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">75%</div>
-                        <div class="text">Communication</div>
-                    </div>
-                </div>
-            </div>
+    <!-- Technical Skills -->
+    <div class="container1 technical">
+      <h1 class="heading1">Technical Skills</h1>
+      <div class="radial-bars">
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path tech-path-1" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">85%</div>
+          <div class="text">Spring Boot</div>
         </div>
-    </section>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path tech-path-2" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">90%</div>
+          <div class="text">MySQL</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path tech-path-3" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">80%</div>
+          <div class="text">JavaScript</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path tech-path-4" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">Java</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path tech-path-5" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">70%</div>
+          <div class="text">Python</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path tech-path-6" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">80%</div>
+          <div class="text">DevOps</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Professional Skills -->
+    <div class="container1 professional">
+      <h1 class="heading1">Professional Skills</h1>
+      <div class="radial-bars">
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">90%</div>
+          <div class="text">Creativity</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">80%</div>
+          <div class="text">Teamwork</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">85%</div>
+          <div class="text">Problem Solving</div>
+        </div>
+
+        <div class="radial-bar">
+          <svg viewBox="0 0 200 200">
+            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">Communication</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
     <section>
         <div id="portfolio">
             <div class="main-text" id="project">
-                <h2>Latest <span style="color: #0ef;">Projects</span></h2>
+                <h2>Latest <span id="text" style="color: var(--accent-color);">Projects</span></h2>
                 <div class="portfolio-content">
                     <div class="project-card">
                         <div class="project-image">
@@ -319,7 +328,7 @@
             <!-- Competitive Achievements -->
             <div class="ach-column">
                 <h3>Competitive Achievements</h3>
-                <a href="https://drive.google.com/file/d/1LDaR-0FzkjJfbqxsUlmh6qdKU_d5VSLK/view" class="achievement-card">
+                <a href="https://drive.google.com/file/d/1LDaR-0FzkjJfbqxsUlmh6qdKU_d5VSLK/view" class="achievement-card" style="text-decoration: none;">
                      <div class="ach-icon">🏆</div>
                      <div class="ach-info">
                          <h4>Runner Up - Code Combat</h4>
@@ -327,7 +336,7 @@
                          <span class="ach-date">2023</span>
                      </div>
                 </a>
-                <a href="#" class="achievement-card">
+                <a href="#" class="achievement-card" style="text-decoration: none;">
                      <div class="ach-icon">🎯</div>
                      <div class="ach-info">
                          <h4>Winner - Social Debate Competition</h4>
@@ -343,7 +352,7 @@
             <div class="ach-column">
                 <h3>Technical Certifications</h3>
                 <div class="certification-grid">
-                    <a href="https://drive.google.com/file/d/192fWG0w0ROFLYgZ9WwMOKQeFFopRr0d9/view" class="cert-card">
+                    <a href="https://drive.google.com/file/d/192fWG0w0ROFLYgZ9WwMOKQeFFopRr0d9/view" class="cert-card" style="text-decoration: none;">
                          <div class="cert-logo">
                              <img src="iit.jpg" alt="IIT Bombay" />
                          </div>
@@ -352,7 +361,7 @@
                              <p>Spoken Tutorial - IIT Bombay</p>
                          </div>
                     </a>
-                    <a href="https://www.hackerrank.com/certificates/f9d73e1c4984" class="cert-card">
+                    <a href="https://www.hackerrank.com/certificates/f9d73e1c4984" class="cert-card" style="text-decoration: none;">
                          <div class="cert-logo">
                              <img src="gb.png" alt="IIT Bombay" />
                          </div>
@@ -362,7 +371,8 @@
                          </div>
                     </a>
  
-                    <a href="https://drive.google.com/file/d/1RTPX8pFjioKaXV5fwjH16mr4qIhGhXl_/view" class="cert-card">
+                    <a href="https://drive.google.com/file/d/1RTPX8pFjioKaXV5fwjH16mr4qIhGhXl_/view" class="cert-card" style="text-decoration: none;"
+                    >
                          <div class="cert-logo">
                              <img src="iit.jpg" alt="IIT Bombay" />
                          </div>
@@ -371,7 +381,7 @@
                              <p>Spoken Tutorial - IIT Bombay</p>
                          </div>
                     </a>
-                    <a href="https://drive.google.com/file/d/1exU39EbKyWMpt4vdFOW6Cdb9567XlHYR/view" class="cert-card">
+                    <a href="https://drive.google.com/file/d/1exU39EbKyWMpt4vdFOW6Cdb9567XlHYR/view" class="cert-card" style="text-decoration: none;">
                          <div class="cert-logo">
                              <img src="iit.jpg" alt="IIT Bombay" />
                          </div>
@@ -382,7 +392,7 @@
                     </a>
  
                     <!-- NEW: Workshops as certification/attendance entry -->
-                    <a href="https://drive.google.com/file/d/18iiqqVNEkMZcrSktYrXCGh-_Xz6hIv0w/view" class="cert-card">
+                    <a href="https://drive.google.com/file/d/18iiqqVNEkMZcrSktYrXCGh-_Xz6hIv0w/view" class="cert-card" style="text-decoration: none;">
                          <div class="cert-logo">
                              <img src="gb.png" alt="Workshop" />
                          </div>
@@ -461,50 +471,47 @@
                 </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Secondary Education (10th)</h3>
-                    <h4>+2 High School Sarwan</h4>
-                    <p class="period">2018 - 2019</p>
-                    <div class="timeline-info">
-                        <p>Completed 10th standard with 83% marks</p>
-                        <p>• Achieved excellence in Mathematics and Science</p>
-                        <p>• Participated in various inter-school competitions</p>
-                        <p>• Class representative and active member of school activities</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="contact-text">
-           <h2>Contact <span>Me</span></h2> 
-           <h4>Let's work Together</h4>
-           <p>I’d love to hear from you! Whether you want to discuss a project, collaborate, or just share your thoughts, feel free to get in touch. Simply fill out the contact form below or reach out to me through my social links — I’ll respond as soon as possible.</p>
-           <div class="contact-list">
-            <li><img src="email.png" alt="" style="width: 20px; height: 20px;"> pritamkumar2865@gmail.com</li>
-            <li><img src="phone.png" alt="" style="width: 20px; height: 20px;"> +91 7033617904</li>
+<section class="contact" id="contact">
+  <div class="contact-text">
+    <h2>Contact <span>Me</span></h2>
+    <h4>Let's work Together</h4>
+    <p>I’d love to hear from you! Whether you want to discuss a project, collaborate, or just share your thoughts, feel free to get in touch. Simply fill out the contact form below or reach out to me through my social links — I’ll respond as soon as possible.</p>
 
-           </div>
-           <div class="contact-icons">
-            <a href="https://www.linkedin.com/in/pritam-kumar-branwal-995898233"><img src="lnk.png"alt="linkedin" height="22px" width="22px"></a>
-            <a href="https://www.instagram.com/pritam_kr._branwal?igsh=ejNwaDc2MWk1dWs3"> <img src="instagram.png"alt="instagram" height="22px" width="22px"></a>
-            <a href="https://www.facebook.com/pritamkr.barnwal.1"> <img src="fb.png"alt="facebook" height="22px" width="22px"></a>
-            <a href="https://github.com/De-Coder-Pritam"><img src="gb.png"alt="github" height="22px" width="22px"></a>
-           </div>
-        </div>
-        <div class="contact-form">
-            <form action="">
-              <input type="text" placeholder="Enter Your Name" required>
-              <input type="email" placeholder="Enter Your Email" required>
-               <input type="text" placeholder="Enter Your Subject" required>
-               <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-               <input type="submit" value="submit" class="send">
-            </form>
-        </div>
-    </section>
+    <div class="contact-list">
+      <li><img src="email.png" alt="" style="width:20px;height:20px;"> pritamkumar2865@gmail.com</li>
+      <li><img src="phone.png" alt="" style="width:20px;height:20px;"> +91 7033617904</li>
+    </div>
+
+    <div class="contact-icons">
+      <a href="#"><img src="lnk.png" alt="linkedin" height="22" width="22"></a>
+      <a href="#"><img src="instagram.png" alt="instagram" height="22" width="22"></a>
+      <a href="#"><img src="fb.png" alt="facebook" height="22" width="22"></a>
+      <a href="#"><img src="gb.png" alt="github" height="22" width="22"></a>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <form id="contactForm" onsubmit="return handleSubmit()">
+  <input type="text" id="name" placeholder="Enter Your Name" required>
+  <input type="email" id="email" placeholder="Enter Your Email" required>
+  <input type="text" id="subject" placeholder="Enter Your Subject" required>
+  <textarea id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+  <input type="submit" value="Submit" class="send">
+</form>
+  </div>
+</section>
+
+<!-- Modal (place near bottom of body) -->
+<div id="messageModal" class="form-feedback-card" aria-hidden="true" role="dialog" aria-modal="true">
+  <p class="modal-text">✅ Message Sent Successfully!</p>
+  <button class="close-btn" onclick="closeModal()"  type="button">Close</button>
+</div>
+
+
+
     <section class="footer">
     <div class="last-text">
         <p>Developed with love by De-Coder-Pritam © 2025</p>
